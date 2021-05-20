@@ -1,0 +1,16 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Eduardo Alencar de Oliveira
+	email = ealencar10@gmail.com
+# Please adapt and uncomment the following lines:
+#	name = Eduardo Alencar de Oliveira
+#	email = ealencar10@gmail.com
+[push]
+  followTags = true
+[alias]
+  c = !git add --all && git commit -m
+  s = !git status -s
+  l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
+  amend = !git add --all && git commit --amend --no-edit
+[core]
+	editor = vim
