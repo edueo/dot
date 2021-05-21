@@ -1,6 +1,6 @@
 # dot
 
-Projeto que versiona meus arquivos de configurações, carinhosamente chamados de `dotfiles`
+Meus arquivos de configurações, carinhosamente chamados de `dotfiles`
 
 ## Como
 
