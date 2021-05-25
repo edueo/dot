@@ -158,5 +158,4 @@ if [ -f '/home/eduardo/google-cloud-sdk/completion.bash.inc' ]; then . '/home/ed
 
 export GOOGLE_APPLICATION_CREDENTIALS="/home/eduardo/.services-accounts/splendid-flow-290316-0e656ffda3a1.json"
 
-terraform -install-autocomplete
-
+complete -C /usr/local/bin/terraform terraform
