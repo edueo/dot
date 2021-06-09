@@ -325,7 +325,10 @@ globalkeys = gears.table.join(
     awful.util.spawn("spectacle") end,
               {description = "run spectacle", group = "edu"}),
 
-
+    -- pcmanfm laucher
+    awful.key({ modkey, "Shift" },            "f",     function ()
+    awful.util.spawn("pcmanfm") end,
+              {description = "run pcmanfm", group = "edu"}),
 
     awful.key({ modkey }, "x",
               function ()
