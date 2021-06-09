@@ -321,7 +321,7 @@ globalkeys = gears.table.join(
               {description = "run chromium", group = "edu"}),
     
     -- Spectacle print screen tool
-    awful.key({ modkey },            "i",     function ()
+    awful.key({ modkey, "Shift" },            "p",     function ()
     awful.util.spawn("spectacle") end,
               {description = "run spectacle", group = "edu"}),
 
