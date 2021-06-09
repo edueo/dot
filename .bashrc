@@ -157,5 +157,21 @@ if [ -f '/home/eduardo/google-cloud-sdk/path.bash.inc' ]; then . '/home/eduardo/
 if [ -f '/home/eduardo/google-cloud-sdk/completion.bash.inc' ]; then . '/home/eduardo/google-cloud-sdk/completion.bash.inc'; fi
 
 export GOOGLE_APPLICATION_CREDENTIALS="/home/eduardo/.services-accounts/splendid-flow-290316-0e656ffda3a1.json"
-
+export LETSGO="/home/eduardo/.asdf/installs/golang/1.16.4/packages/src"
 complete -C /usr/local/bin/terraform terraform
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/eduardo/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/eduardo/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/eduardo/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/eduardo/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
