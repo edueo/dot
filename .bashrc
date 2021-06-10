@@ -175,3 +175,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# added by travis gem
+[ ! -s /home/eduardo/.travis/travis.sh ] || source /home/eduardo/.travis/travis.sh
