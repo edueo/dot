@@ -80,6 +80,7 @@ if ${use_color} ; then
 	alias egrep='egrep --colour=auto'
 	alias fgrep='fgrep --colour=auto'
   alias vscode='/home/eduardo/VSCode-linux-x64/bin/code'
+  alias rest='/home/eduardo/apps/insomnia/insomnia &'
 else
 	if [[ ${EUID} == 0 ]] ; then
 		# show root@ when we don't have colors
@@ -157,7 +158,7 @@ if [ -f '/home/eduardo/google-cloud-sdk/path.bash.inc' ]; then . '/home/eduardo/
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/eduardo/google-cloud-sdk/completion.bash.inc' ]; then . '/home/eduardo/google-cloud-sdk/completion.bash.inc'; fi
 
-export GOOGLE_APPLICATION_CREDENTIALS="/home/eduardo/.services-accounts/splendid-flow-290316-de4334248c56.json"
+export GOOGLE_APPLICATION_CREDENTIALS="/home/eduardo/.services-accounts/splendid-flow-290316-0e656ffda3a1.json"
 export LETSGO="/home/eduardo/.asdf/installs/golang/1.16.4/packages/src"
 complete -C /usr/local/bin/terraform terraform
 
