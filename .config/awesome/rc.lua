@@ -169,7 +169,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
+    awful.tag({ "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" }, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -542,4 +542,4 @@ beautiful.useless_gap = 3
 --
 --awful.spawn.with_shell("nitrogen --set-zoom-fill --random ~/.wallpapers/backgrounds")
 awful.spawn.with_shell("/home/eduardo/styli.sh/styli.sh")
-awful.spawn.with_shell("xrandr --output eDP1 --mode 1366x768 --pos 0x0 --rotate normal --output DP1 --off --output HDMI1 --primary --mode 1920x1080 --pos 1366x0 --rotate normal --output HDMI2 --off --output VIRTUAL1 --off")
+awful.spawn.with_shell("xrandr --output eDP1 --off --output DP1 --off --output HDMI1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI2 --off --output VIRTUAL1 --off")
