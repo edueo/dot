@@ -103,6 +103,10 @@ alias t="todo.sh"
 alias clip="xclip -selection clipboard <"
 alias config='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
 
+# Escale alias
+alias mongoprod='pass -c mongodb.escale/production'
+alias mongostaging='pass -c mongodb.escale/staging'
+
 xhost +local:root > /dev/null 2>&1
 
 complete -cf sudo
@@ -180,3 +184,6 @@ unset __conda_setup
 
 # added by travis gem
 [ ! -s /home/eduardo/.travis/travis.sh ] || source /home/eduardo/.travis/travis.sh
+
+# autojump
+[[ -s /home/eduardo/.autojump/etc/profile.d/autojump.sh ]] && source /home/eduardo/.autojump/etc/profile.d/autojump.sh
