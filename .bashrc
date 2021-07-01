@@ -187,3 +187,6 @@ unset __conda_setup
 
 # autojump
 [[ -s /home/eduardo/.autojump/etc/profile.d/autojump.sh ]] && source /home/eduardo/.autojump/etc/profile.d/autojump.sh
+
+# add Pulumi to the PATH
+export PATH=$PATH:$HOME/.pulumi/bin
