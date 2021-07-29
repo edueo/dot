@@ -107,6 +107,9 @@ alias config='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
 alias mongoprod='pass -c mongodb.escale/production'
 alias mongostaging='pass -c mongodb.escale/staging'
 
+alias escale='export AWS_PROFILE=Developers-398635583628 AWS_REGION=us-east-1'
+alias sandbox='export AWS_PROFILE=Developers-389855184132 AWS_REGION=us-east-1'
+
 xhost +local:root > /dev/null 2>&1
 
 complete -cf sudo
@@ -188,5 +191,7 @@ unset __conda_setup
 # autojump
 [[ -s /home/eduardo/.autojump/etc/profile.d/autojump.sh ]] && source /home/eduardo/.autojump/etc/profile.d/autojump.sh
 
-# add Pulumi to the PATH
-export PATH=$PATH:$HOME/.pulumi/bin
+# add pycharm to the PATH
+export PATH=$PATH:$HOME/Downloads/pycharm-community-2021.1.3/bin
+export PATH=$PATH:$HOME/Downloads/GoLand-2021.1.3/bin
+
