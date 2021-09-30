@@ -541,5 +541,5 @@ beautiful.useless_gap = 3
 -- Autostart
 --
 --awful.spawn.with_shell("nitrogen --set-zoom-fill --random ~/.wallpapers/backgrounds")
+awful.spawn.with_shell("xrandr --output eDP-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-2 --off")
 awful.spawn.with_shell("/home/eduardo/styli.sh/styli.sh")
-awful.spawn.with_shell("xrandr --output eDP1 --mode 1366x768 --pos 0x0 --rotate normal --output DP1 --off --output HDMI1 --primary --mode 1920x1080 --pos 1366x0 --rotate normal --output HDMI2 --off --output VIRTUAL1 --off")

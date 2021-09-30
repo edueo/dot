@@ -195,3 +195,7 @@ unset __conda_setup
 export PATH=$PATH:$HOME/Downloads/pycharm-community-2021.1.3/bin
 export PATH=$PATH:$HOME/Downloads/GoLand-2021.1.3/bin
 
+
+# projects
+export WS_METRIKFY="/home/eduardo/projetos/metrikfy/monorepo"
+
