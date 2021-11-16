@@ -109,6 +109,8 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
+    #family: JetBrains Mono
+    #
     family: Source Code Pro
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
@@ -116,7 +118,7 @@ font:
     # family: JetBrains Mono
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
-    # family: TerminessTTF Nerd Font
+    #:family: TerminessTTF Nerd Font
     # family: Mononoki Nerd Font
 
     # The `style` can be specified to pick a specific face.
@@ -180,7 +182,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 12.0
+  size: 11.5
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -214,35 +216,34 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Colors (Monokai Pro)
+# Colors (Hybrid)
 colors:
   # Default colors
   primary:
-    background: '#2D2A2E'
-    foreground: '#FCFCFA'
+    background: '0x27292c'
+    foreground: '0xd0d2d1'
 
   # Normal colors
   normal:
-    black:   '#403E41'
-    red:     '#FF6188'
-    green:   '#A9DC76'
-    yellow:  '#FFD866'
-    blue:    '#FC9867'
-    magenta: '#AB9DF2'
-    cyan:    '#78DCE8'
-    white:   '#FCFCFA'
+    black:   '0x35383b'
+    red:     '0xb05655'
+    green:   '0x769972'
+    yellow:  '0xe1a574'
+    blue:    '0x7693ac'
+    magenta: '0x977ba0'
+    cyan:    '0x749e99'
+    white:   '0x848b92'
 
   # Bright colors
   bright:
-    black:   '#727072'
-    red:     '#FF6188'
-    green:   '#A9DC76'
-    yellow:  '#FFD866'
-    blue:    '#FC9867'
-    magenta: '#AB9DF2'
-    cyan:    '#78DCE8'
-    white:   '#FCFCFA'
-
+    black:   '0x484c52'
+    red:     '0xd27c7b'
+    green:   '0xdffebe'
+    yellow:  '0xf0d189'
+    blue:    '0x96b1c9'
+    magenta: '0xbfa5c7'
+    cyan:    '0x9fc9c3'
+    white:   '0xfcf7e2'
   # Dim colors
   #
   # If the dim colors are not set, they will be calculated automatically based

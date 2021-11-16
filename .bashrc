@@ -152,11 +152,6 @@ ex ()
   fi
 }
 
-
-# ASDF https://asdf-vm.com/#/core-manage-asdf
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
-
 export EDITOR=vim
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -198,4 +193,5 @@ export PATH=$PATH:$HOME/Downloads/GoLand-2021.1.3/bin
 
 # projects
 export WS_METRIKFY="/home/eduardo/projetos/metrikfy/monorepo"
-
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
