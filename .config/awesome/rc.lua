@@ -169,7 +169,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "[1]terminal", "[2]www", "[3]editor", "[4]other", "[5]files", "[6]", "[7]", "[8]", "[9]" }, s, awful.layout.layouts[1])
+    awful.tag({ "[1]terminal", "[2]www", "[3]editor", "[4]music", "[5]files", "[6]vms", "[7]", "[8]", "[9]" }, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -315,7 +315,7 @@ globalkeys = gears.table.join(
     awful.util.spawn("dmenu_run") end,
               {description = "run dmenu", group = "edu"}),
 
-    -- Chromium laucher
+    -- browser laucher
     awful.key({ modkey },            "b",     function ()
     awful.util.spawn("chromium") end,
               {description = "run chromium", group = "edu"}),
@@ -541,5 +541,5 @@ beautiful.useless_gap = 3
 -- Autostart
 --
 --awful.spawn.with_shell("nitrogen --set-zoom-fill --random ~/.wallpapers/backgrounds")
-awful.spawn.with_shell("xrandr --output eDP-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-2 --off")
+awful.spawn.with_shell("xrandr --output eDP-1 --primary --mode 1366x768 --pos 1213x317 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate right --output DP-1 --off --output HDMI-2 --off")
 awful.spawn.with_shell("/home/eduardo/styli.sh/styli.sh")
