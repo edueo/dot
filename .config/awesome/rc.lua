@@ -317,8 +317,8 @@ globalkeys = gears.table.join(
 
     -- browser laucher
     awful.key({ modkey },            "b",     function ()
-    awful.util.spawn("chromium") end,
-              {description = "run chromium", group = "edu"}),
+    awful.util.spawn("brave") end,
+              {description = "run brave", group = "edu"}),
     
     -- Spectacle print screen tool
     awful.key({ modkey, "Shift" },            "p",     function ()
